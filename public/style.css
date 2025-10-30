@@ -1,0 +1,139 @@
+body {
+  font-family: "Poppins", sans-serif;
+   /* background: linear-gradient(135deg, #e37b04, #295ac2); */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.index{
+    background: linear-gradient(135deg, #0c69ab, #f40202aa);
+    min-height: 100vh;
+    padding-top: 40px;
+}
+.edit{
+    background: linear-gradient(135deg, #1fffda, #ff0303);
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+h1 {
+color: #0e0d0d;
+background: linear-gradient(2000deg, #d7e0ea, #34b628);
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+h2, h3 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+
+button {
+  background: #0376db;
+  border: none;
+  color: rgb(245, 242, 242);
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #022bb0;
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+.chat {
+  background: rgb(156, 240, 198);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px 25px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 20px;
+}
+
+.chat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.chat p {
+  margin: 6px 0;
+}
+
+.chat i {
+  color: #fa0505;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+}
+
+.msg {
+  background: #8cc2e3;
+  border-left: 4px solid #3187d3;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+
+
+.newchat {
+  background: linear-gradient(135deg, #288cd4, #c02727);
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.newchat form {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.newchat input,
+.newchat textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.newchat input:focus,
+.newchat textarea:focus {
+  border-color: #1e88e5;
+}
+
+
+form textarea {
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #0e0404;
+  resize: none;
+  transition: border-color 0.2s;
+}
+
+form textarea:focus {
+  border-color: #1e88e5;
+}
