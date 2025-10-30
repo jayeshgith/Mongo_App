@@ -1,9 +1,3 @@
-Got it, Manish ✅
-Here’s a **ready-to-upload `README.md`** for your **MongoApp** project — clean, beginner-friendly, and looks perfect on GitHub.
-Just copy this text into a file named **`README.md`** in your project folder, then push it to GitHub.
-
----
-
 
 # 💬 MongoApp
 
