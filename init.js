@@ -1,17 +1,13 @@
 const mongoose = require("mongoose");
-
 const Chat = require("./models/chat.js");
-main()
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
 
-  .catch((err) => console.log(err));
 async function main() {
-  await mongoose.connect(
-    "mongodb+srv://manishkunthoor_db_user:JyU8KKVZMGYveuGO@mongoapp.ii8gstm.mongodb.net/TEST?appName=MongoAPP"
-  );
+  await mongoose.connect(process.env.MONGO_URI);
+  console.log("Connected to MongoDB Atlas");
 }
+
+main();
+
 let allChats = [
   {
     from: "Mani",
@@ -38,7 +34,7 @@ let allChats = [
     created_at: new Date(),
   },
 ];
-Chat.insertMany(allChats)
-.then((res) => {
-  console.log(res);
+
+Chat.insertMany(allChats).then(() => {
+  console.log("Data inserted");
 });
