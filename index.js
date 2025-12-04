@@ -81,11 +81,12 @@ app.delete("/chats/:id", async (req, res) => {
   // console.log(deletedChat);
   res.redirect("/chats");
 });
-
 app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+// IMPORTANT FIX for Render
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
