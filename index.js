@@ -19,7 +19,9 @@ main()
 
   .catch((err) => console.log(err));
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/MongoAPP");
+  await mongoose.connect(
+    "mongodb+srv://manishkunthoor_db_user:JyU8KKVZMGYveuGO@mongoapp.ii8gstm.mongodb.net/TEST?appName=MongoAPP"
+  );
 }
 
 app.get("/chats", async (req, res) => {
